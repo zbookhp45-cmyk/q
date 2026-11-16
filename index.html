@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-pen-nib"></i>
+            pen<span>store.</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#books">Pens</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-right">
+            <button class="cart-button" id="cartOpen">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Cart</span>
+                <small id="cartCount">0</small>
+            </button>
+
+            <button class="menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="small-title">WELCOME TO OUR PEN STORE</span>
+                <h1>Find your next <span>favorite pen.</span></h1>
+                <p>
+                    Good pens, smooth writing, and fresh ideas.
+                    Find a pen you love for school, work, and every day.
+                </p>
+                <a href="#books" class="main-button">
+                    See All Pens <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="hero-info">
+                    <div>
+                        <strong>500+</strong>
+                        <span>Happy customers</span>
+                    </div>
+                    <div>
+                        <strong>100+</strong>
+                        <span>Pens to choose</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+              
+                <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=1000&q=85" alt="A premium writing pen">
+                
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="books-section" id="books">
+            <div class="section-top">
+                <div>
+                    <span class="small-title">OUR COLLECTION</span>
+                    <h2>Pens you may like</h2>
+                    <p>Take a look at our pens and find the right one for you.</p>
+                </div>
+                <span class="book-number">01 — 04</span>
+            </div>
+
+            <div class="books-grid">
+                <article class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=700&q=85" alt="Classic Black pen">
+                        <span class="book-tag">Popular</span>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Ballpoint Pen</span>
+                        <h3>Classic Black</h3>
+                        <p>A simple, reliable pen for notes and everyday writing.</p>
+                        <div class="book-bottom">
+                            <strong>85,000 UZS</strong>
+                            <button class="order-button" data-id="1">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=85" alt="Silver Line pen">
+                        <span class="book-tag">New</span>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Rollerball Pen</span>
+                        <h3>Silver Line</h3>
+                        <p>A smooth-writing pen with a clean, modern look.</p>
+                        <div class="book-bottom">
+                            <strong>95,000 UZS</strong>
+                            <button class="order-button" data-id="2">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=85" alt="Blue Point pen">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Gel Pen</span>
+                        <h3>Blue Point</h3>
+                        <p>A bright, easy pen for notes, lists, and new ideas.</p>
+                        <div class="book-bottom">
+                            <strong>75,000 UZS</strong>
+                            <button class="order-button" data-id="3">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=85" alt="Gold Touch pen">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Fountain Pen</span>
+                        <h3>Gold Touch</h3>
+                        <p>A classic pen with a neat finish for special writing.</p>
+                        <div class="book-bottom">
+                            <strong>90,000 UZS</strong>
+                            <button class="order-button" data-id="4">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85" alt="A person writing with a pen">
+            </div>
+            <div class="about-content">
+                <span class="small-title">ABOUT OUR STORE</span>
+                <h2>Every great idea starts with a pen.</h2>
+                <p>
+                    We believe a good pen makes writing easier and more enjoyable.
+                    Our store brings together useful pens for school, work, and everyday ideas.
+                </p>
+                <a href="#books" class="text-link">
+                    Find a pen <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div>
+                <span class="small-title">GET IN TOUCH</span>
+                <h2>Have a question?</h2>
+                <p>We are happy to hear from you.</p>
+            </div>
+            <a href="mailto:hello@bookstore.com" class="main-button">
+                Contact Us <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-pen-nib"></i>
+            pen<span>store.</span>
+        </a>
+        <p>Good pens. Good ideas.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <span class="copyright">© 2026 Pen Store. All rights reserved.</span>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <div>
+                <span class="small-title">YOUR BAG</span>
+                <h2>My Cart <span id="panelCount">(0)</span></h2>
+            </div>
+            <button class="close-button" id="cartClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-line">
+                <span>Total</span>
+                <strong id="cartTotal">0 UZS</strong>
+            </div>
+            <button class="checkout-button" id="checkoutButton">
+                Buy Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Added to Cart!</span>
+    </div>
+
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-box">
+            <button class="close-button modal-close" id="modalClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <span class="small-title">ONE MORE STEP</span>
+            <h2>Your Order</h2>
+            <p>Enter your details to finish your order.</p>
+            <form id="checkoutForm">
+                <label for="customerName">Name</label>
+                <input type="text" id="customerName" placeholder="Your name" required>
+
+                <label for="customerPhone">Phone</label>
+                <input type="tel" id="customerPhone" placeholder="Your phone number" required>
+
+                <button type="submit" class="checkout-button">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="categories-section">
+        <div class="section-heading">
+            <span class="small-title">EXPLORE PENS</span>
+            <h2>Find what you love.</h2>
+            <p>There is a pen for every note, plan, and idea.</p>
+        </div>
+
+        <div class="categories-grid">
+            <a href="#books" class="category-card">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Ballpoint</h3>
+                <span>For everyday notes</span>
+            </a>
+
+            <a href="#books" class="category-card">
+                <i class="fa-solid fa-pen-fancy"></i>
+                <h3>Fountain Pens</h3>
+                <span>For smooth writing</span>
+            </a>
+
+            <a href="#books" class="category-card">
+                <i class="fa-solid fa-highlighter"></i>
+                <h3>Gel Pens</h3>
+                <span>For bright ideas</span>
+            </a>
+
+            <a href="#books" class="category-card">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h3>Premium</h3>
+                <span>For special moments</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="best-section">
+        <div class="section-heading">
+            <span class="small-title">CUSTOMER FAVORITES</span>
+            <h2>Best Pens</h2>
+            <p>Pens our customers enjoy the most.</p>
+        </div>
+
+        <div class="best-grid">
+            <div class="best-card">
+                <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=85" alt="Writing pen">
+                <div>
+                    <span>01 / POPULAR</span>
+                    <h3>Classic Black</h3>
+                    <p>85,000 UZS</p>
+                </div>
+            </div>
+
+            <div class="best-card">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=85" alt="Writing pen">
+                <div>
+                    <span>02 / NEW</span>
+                    <h3>Silver Line</h3>
+                    <p>95,000 UZS</p>
+                </div>
+            </div>
+
+            <div class="best-card">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=85" alt="Writing pen">
+                <div>
+                    <span>03 / TOP PICK</span>
+                    <h3>Blue Point</h3>
+                    <p>75,000 UZS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="section-heading">
+            <span class="small-title">WHAT PEOPLE SAY</span>
+            <h2>From our customers</h2>
+            <p>A few words from people who love our pens.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"I found a pen that writes really smoothly. The website is easy to use."</p>
+                <h4>Alex Morgan</h4>
+                <span>Pen lover</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"A nice place to find good pens. I will come back for more."</p>
+                <h4>Emma Wilson</h4>
+                <span>Customer</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Good pen choices and a clean website. I really like it."</p>
+                <h4>Daniel Smith</h4>
+                <span>Customer</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <span class="small-title">STAY IN TOUCH</span>
+        <h2>Love writing?</h2>
+        <p>Get news about new pens and special offers.</p>
+
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Join Us <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
